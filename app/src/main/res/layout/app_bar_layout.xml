@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="emma"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/act_scaner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_camera"
+                    android:text="SCAN" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/act_list"
+                    android:layout_toLeftOf="@+id/act_scaner"
+                    android:layout_width="wrap_content"
+                    android:text="LIST"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textSize="10sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:drawableTop="@drawable/ic_list"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/act_profile"
+                    android:layout_toLeftOf="@+id/act_list"
+                    android:layout_width="wrap_content"
+                    android:text="PROFILE"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:drawableTop="@drawable/ic_user"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.cizotech.emma.SignInActivity">
+
+        <include layout="@layout/app_bar_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#9f9c9c" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/bg" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="80dp"
+                        android:background="@drawable/ic_user_profile" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Nicole Hollis"
+                    android:textColor="#484545"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="username1111"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_product_pre"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="PRODUCT PREFERENCES"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/img_topdwn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_down" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_product_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:visibility="gone"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_sempoo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="SHAMPOO" />
+
+                        <TextView
+                            android:id="@+id/text_rinse_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="RINSE OUT CONDITIONER" />
+                        <TextView
+                            android:id="@+id/text_leave_in"
+                            android:text="LEAVE-IN CONDITIONER"
+                            android:padding="5dp"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/text_styler"
+                            android:text="STYLER"
+                            android:padding="5dp"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/text_update_preferece"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="UPDATE PREFERENCES"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="PERSONAL PROFILE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

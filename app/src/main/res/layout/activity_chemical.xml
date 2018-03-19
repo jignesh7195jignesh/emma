@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.cizotech.emma.SignInActivity">
+
+        <include layout="@layout/app_bar_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#9f9c9c" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:layout_marginRight="30dp"
+            android:text="Which HAIRSTYLE do you wear most oftern ? (select one) "
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="30dp"
+            android:id="@+id/rc_hairestyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_margin="30dp"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/text_back"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="BACK"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/text_next"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="NEXT"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

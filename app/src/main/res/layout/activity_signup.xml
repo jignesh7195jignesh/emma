@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.cizotech.emma.SignInActivity">
+
+        <include layout="@layout/app_bar_layout" />
+        <View
+            android:background="#9f9c9c"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#e5f2f9"
+            android:gravity="center_vertical"
+            android:paddingLeft="20sp"
+            android:text="Sign up"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/acet_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Your email Address"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#9f9c9c" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Your password"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#9f9c9c" />
+
+            <TextView
+                android:id="@+id/text_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="SIGN UP"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
